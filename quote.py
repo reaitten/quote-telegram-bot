@@ -33,7 +33,7 @@ app = Client(
     )
 
 def log_msg_info(client, message):
-    lmi = LOGGER.info('UID: {} - UN: {} - MSG: {}'.format(message.from_user.id, message.chat.username, message.text))
+    LOGGER.info('UID: {} - UN: {} - MSG: {}'.format(message.from_user.id, message.chat.username, message.text))
 
 def get_zen_quote():
     try:
